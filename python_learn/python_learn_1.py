@@ -6,6 +6,7 @@ Author ：SunJie
 
 from selenium import webdriver #下载了selenium之后，我可以把selenium导入进来
 
+
 my_window = webdriver.Chrome() #申明了一个chrome浏览器
 my_window.get("https://www.99bill.com") #用浏览器打开快钱的官网
 my_window.close() #关闭浏览器
