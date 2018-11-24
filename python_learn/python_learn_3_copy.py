@@ -25,7 +25,7 @@ class Mytest(unittest.TestCase): #写个类，继承unnitest.Testcase
     def tearDown(self):
         self.my_window.close() #关闭浏览器
 
-    def test_a_one(self):
+    def test_a_one_copy(self):
         membercode = self.my_window.find_element_by_name('membercode')
         membercode.clear()
         membercode.send_keys('123456')
