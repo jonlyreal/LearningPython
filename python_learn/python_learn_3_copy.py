@@ -25,6 +25,7 @@ class Mytest(unittest.TestCase):  # 写个类，继承unnitest.Testcase
     def tearDown(self):
         self.my_window.close()  # 关闭浏览器
 
+    #为什么不把下面这个def定义在文件3里面，所case都写在一个文件中，不是更好维护嘛，同时也不用产生冗余代码
     def test_a_one_copy(self):
         membercode = self.my_window.find_element_by_name('membercode')
         membercode.clear()
@@ -33,3 +34,4 @@ class Mytest(unittest.TestCase):  # 写个类，继承unnitest.Testcase
 
 if __name__ == '__main__':
     unittest.main()
+    
